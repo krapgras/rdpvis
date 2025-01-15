@@ -12,7 +12,7 @@ const parseEventLog = (eventLogs: any) => {
   }
 
   // Filter eventLogs to only include events with group "rdp_attacks"
-  eventLogs = eventLogs.filter((event) => event.group === "rdp_attacks");
+  eventLogs = eventLogs.filter((event) => event.group === "RDP Events");
 
   let events = eventLogs.map((event: any) => {
     const eventData = event.document.data.Event;
