@@ -27,7 +27,7 @@ function App() {
             </Typography>
             <Typography sx={{ mb: 1.5 }} component="pre" color="text.secondary">
               ./chainsaw hunt [INPUT_FOLDER_CONTAINING_EVTX_FILES] --mapping
-              mappings/sigma-event-logs-all.yml -r rules/rdp_attacks/ -o
+              mappings/sigma-event-logs-all.yml -r rules/evtx/rdp_attacks/ -o
               [OUTPUT_FILE].json -j
             </Typography>
           </CardContent>
