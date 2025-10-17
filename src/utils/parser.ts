@@ -23,7 +23,7 @@ const parseEventLog = (eventLogs: any) => {
     const activityId =
       "Correlation_attributes" in systemData
         ? systemData.Correlation_attributes.ActivityID
-        : null;
+        : Math.random().toString(16).slice(2);
 
     let user = "";
     let domain = "";
